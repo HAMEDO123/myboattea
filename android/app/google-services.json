@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "178757808828",
+    "project_id": "my-boat-team",
+    "storage_bucket": "my-boat-team.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178757808828:android:6dd02dcd2400f57ac7d6b9",
+        "android_client_info": {
+          "package_name": "com.flutterflow.finalnewtutorial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy3S3fzlH5TXaW4kIjKlyCI5YP69z_le0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
