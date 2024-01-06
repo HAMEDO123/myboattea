@@ -6,14 +6,12 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/random_data_util.dart' as random_data;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'ownerdetails_model.dart';
 export 'ownerdetails_model.dart';
 
 class OwnerdetailsWidget extends StatefulWidget {
-  const OwnerdetailsWidget({Key? key}) : super(key: key);
+  const OwnerdetailsWidget({super.key});
 
   @override
   _OwnerdetailsWidgetState createState() => _OwnerdetailsWidgetState();
@@ -87,7 +85,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                     fontSize: 22.0,
                   ),
             ),
-            actions: [],
+            actions: const [],
             centerTitle: true,
             elevation: 2.0,
           ),
@@ -110,7 +108,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         20.0, 20.0, 20.0, 0.0),
                                     child: SelectionArea(
                                         child: GradientText(
@@ -125,7 +123,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                           ),
                                       colors: [
                                         FlutterFlowTheme.of(context).primary,
-                                        Color(0xFF6E189D)
+                                        const Color(0xFF6E189D)
                                       ],
                                       gradientDirection: GradientDirection.ltr,
                                       gradientType: GradientType.linear,
@@ -134,14 +132,14 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                 ],
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 0.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 30.0, 20.0, 20.0),
                                       child: SelectionArea(
                                           child: GradientText(
@@ -157,7 +155,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                             ),
                                         colors: [
                                           FlutterFlowTheme.of(context).primary,
-                                          Color(0xFF6E189D)
+                                          const Color(0xFF6E189D)
                                         ],
                                         gradientDirection:
                                             GradientDirection.ltr,
@@ -171,9 +169,9 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
@@ -181,7 +179,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                         focusNode:
                                             _model.emailAddressFocusNode1,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.name],
+                                        autofillHints: const [AutofillHints.name],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: FFLocalizations.of(context)
@@ -194,12 +192,12 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFF1F4F8),
                                               width: 2.0,
                                             ),
@@ -207,7 +205,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFF4B39EF),
                                               width: 2.0,
                                             ),
@@ -215,7 +213,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -224,7 +222,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -232,7 +230,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF1F4F8),
+                                          fillColor: const Color(0xFFF1F4F8),
                                           prefixIcon: Icon(
                                             Icons.person_rounded,
                                             color: FlutterFlowTheme.of(context)
@@ -243,7 +241,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF101213),
+                                              color: const Color(0xFF101213),
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w500,
                                             ),
@@ -254,9 +252,9 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
@@ -264,7 +262,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                         focusNode:
                                             _model.emailAddressFocusNode2,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.email],
+                                        autofillHints: const [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: FFLocalizations.of(context)
@@ -277,12 +275,12 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFF1F4F8),
                                               width: 2.0,
                                             ),
@@ -290,7 +288,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFF4B39EF),
                                               width: 2.0,
                                             ),
@@ -298,7 +296,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -307,7 +305,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -315,7 +313,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF1F4F8),
+                                          fillColor: const Color(0xFFF1F4F8),
                                           prefixIcon: Icon(
                                             Icons.public_sharp,
                                             color: FlutterFlowTheme.of(context)
@@ -326,7 +324,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF101213),
+                                              color: const Color(0xFF101213),
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w500,
                                             ),
@@ -337,9 +335,9 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
@@ -347,7 +345,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                         focusNode:
                                             _model.emailAddressFocusNode3,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.name],
+                                        autofillHints: const [AutofillHints.name],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: FFLocalizations.of(context)
@@ -360,12 +358,12 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFF1F4F8),
                                               width: 2.0,
                                             ),
@@ -373,7 +371,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFF4B39EF),
                                               width: 2.0,
                                             ),
@@ -381,7 +379,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -390,7 +388,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -398,7 +396,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF1F4F8),
+                                          fillColor: const Color(0xFFF1F4F8),
                                           prefixIcon: Icon(
                                             Icons.location_on,
                                             color: FlutterFlowTheme.of(context)
@@ -409,7 +407,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF101213),
+                                              color: const Color(0xFF101213),
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w500,
                                             ),
@@ -420,7 +418,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 0.0),
                                     child: FlutterFlowCalendar(
                                       color:
@@ -455,14 +453,14 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 0.0, 5.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 10.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
@@ -484,9 +482,9 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
@@ -494,7 +492,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                         focusNode:
                                             _model.emailAddressFocusNode4,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.name],
+                                        autofillHints: const [AutofillHints.name],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: FFLocalizations.of(context)
@@ -507,12 +505,12 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFF1F4F8),
                                               width: 2.0,
                                             ),
@@ -520,7 +518,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFF4B39EF),
                                               width: 2.0,
                                             ),
@@ -528,7 +526,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -537,7 +535,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -545,7 +543,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF1F4F8),
+                                          fillColor: const Color(0xFFF1F4F8),
                                           prefixIcon: Icon(
                                             Icons.blinds,
                                             color: FlutterFlowTheme.of(context)
@@ -556,7 +554,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF101213),
+                                              color: const Color(0xFF101213),
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w500,
                                             ),
@@ -567,9 +565,9 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
@@ -577,7 +575,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                         focusNode:
                                             _model.emailAddressFocusNode5,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.name],
+                                        autofillHints: const [AutofillHints.name],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: FFLocalizations.of(context)
@@ -590,12 +588,12 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFF1F4F8),
                                               width: 2.0,
                                             ),
@@ -603,7 +601,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFF4B39EF),
                                               width: 2.0,
                                             ),
@@ -611,7 +609,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -620,7 +618,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -628,7 +626,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF1F4F8),
+                                          fillColor: const Color(0xFFF1F4F8),
                                           prefixIcon: Icon(
                                             Icons.account_balance,
                                             color: FlutterFlowTheme.of(context)
@@ -639,7 +637,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF101213),
+                                              color: const Color(0xFF101213),
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w500,
                                             ),
@@ -650,9 +648,9 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
@@ -660,7 +658,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                         focusNode:
                                             _model.emailAddressFocusNode6,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.name],
+                                        autofillHints: const [AutofillHints.name],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: FFLocalizations.of(context)
@@ -673,12 +671,12 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFF1F4F8),
                                               width: 2.0,
                                             ),
@@ -686,7 +684,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFF4B39EF),
                                               width: 2.0,
                                             ),
@@ -694,7 +692,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -703,7 +701,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -711,7 +709,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF1F4F8),
+                                          fillColor: const Color(0xFFF1F4F8),
                                           prefixIcon: Icon(
                                             Icons
                                                 .account_balance_wallet_rounded,
@@ -723,7 +721,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF101213),
+                                              color: const Color(0xFF101213),
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w500,
                                             ),
@@ -734,17 +732,17 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         20.0, 0.0, 10.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.05),
+                                              const AlignmentDirectional(0.0, 0.05),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 50.0, 0.0, 50.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
@@ -780,14 +778,14 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                               options: FFButtonOptions(
                                                 width: 270.0,
                                                 height: 50.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
-                                                color: Color(0xFF6E189D),
+                                                color: const Color(0xFF6E189D),
                                                 textStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleMedium
@@ -796,7 +794,7 @@ class _OwnerdetailsWidgetState extends State<OwnerdetailsWidget> {
                                                           color: Colors.white,
                                                         ),
                                                 elevation: 2.0,
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Colors.transparent,
                                                   width: 1.0,
                                                 ),

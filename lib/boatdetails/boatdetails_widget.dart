@@ -7,14 +7,12 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'boatdetails_model.dart';
 export 'boatdetails_model.dart';
 
 class BoatdetailsWidget extends StatefulWidget {
-  const BoatdetailsWidget({Key? key}) : super(key: key);
+  const BoatdetailsWidget({super.key});
 
   @override
   _BoatdetailsWidgetState createState() => _BoatdetailsWidgetState();
@@ -81,7 +79,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
         if (!snapshot.hasData) {
           return Scaffold(
             backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-            body: Center(
+            body: const Center(
               child: SizedBox(
                 width: 50.0,
                 height: 50.0,
@@ -128,7 +126,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                         fontSize: 22.0,
                       ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 2.0,
               ),
@@ -151,7 +149,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 20.0, 20.0, 30.0),
                                         child: SelectionArea(
                                             child: GradientText(
@@ -167,7 +165,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                           colors: [
                                             FlutterFlowTheme.of(context)
                                                 .primary,
-                                            Color(0xFF6E189D)
+                                            const Color(0xFF6E189D)
                                           ],
                                           gradientDirection:
                                               GradientDirection.ltr,
@@ -175,9 +173,9 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                         )),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             30.0, 0.0, 30.0, 16.0),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 370.0,
                                           child: TextFormField(
                                             controller:
@@ -185,7 +183,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                             focusNode:
                                                 _model.emailAddressFocusNode1,
                                             autofocus: true,
-                                            autofillHints: [AutofillHints.name],
+                                            autofillHints: const [AutofillHints.name],
                                             obscureText: false,
                                             decoration: InputDecoration(
                                               labelText:
@@ -199,12 +197,12 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                               enabledBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFFF1F4F8),
                                                   width: 2.0,
                                                 ),
@@ -212,7 +210,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     BorderRadius.circular(12.0),
                                               ),
                                               focusedBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFF4B39EF),
                                                   width: 2.0,
                                                 ),
@@ -220,7 +218,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     BorderRadius.circular(12.0),
                                               ),
                                               errorBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFFFF5963),
                                                   width: 2.0,
                                                 ),
@@ -229,7 +227,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                               ),
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFFFF5963),
                                                   width: 2.0,
                                                 ),
@@ -237,7 +235,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     BorderRadius.circular(12.0),
                                               ),
                                               filled: true,
-                                              fillColor: Color(0xFFF1F4F8),
+                                              fillColor: const Color(0xFFF1F4F8),
                                               prefixIcon: Icon(
                                                 Icons.directions_boat,
                                                 color:
@@ -250,7 +248,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                 .override(
                                                   fontFamily:
                                                       'Plus Jakarta Sans',
-                                                  color: Color(0xFF101213),
+                                                  color: const Color(0xFF101213),
                                                   fontSize: 14.0,
                                                   fontWeight: FontWeight.w500,
                                                 ),
@@ -265,10 +263,10 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                         children: [
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       30.0, 0.0, 5.0, 16.0),
-                                              child: Container(
+                                              child: SizedBox(
                                                 width: 150.0,
                                                 child: TextFormField(
                                                   controller: _model
@@ -276,7 +274,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                   focusNode: _model
                                                       .emailAddressFocusNode2,
                                                   autofocus: true,
-                                                  autofillHints: [
+                                                  autofillHints: const [
                                                     AutofillHints.countryName
                                                   ],
                                                   obscureText: false,
@@ -294,14 +292,14 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              Color(0xFF57636C),
+                                                              const Color(0xFF57636C),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.w500,
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFF1F4F8),
                                                         width: 2.0,
@@ -312,7 +310,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     focusedBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFF4B39EF),
                                                         width: 2.0,
@@ -323,7 +321,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     errorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFFF5963),
                                                         width: 2.0,
@@ -334,7 +332,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     focusedErrorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFFF5963),
                                                         width: 2.0,
@@ -345,7 +343,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     filled: true,
                                                     fillColor:
-                                                        Color(0xFFF1F4F8),
+                                                        const Color(0xFFF1F4F8),
                                                     prefixIcon: Icon(
                                                       Icons.groups_sharp,
                                                       color:
@@ -361,7 +359,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            Color(0xFF101213),
+                                                            const Color(0xFF101213),
                                                         fontSize: 14.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -375,10 +373,10 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                           ),
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       5.0, 0.0, 30.0, 16.0),
-                                              child: Container(
+                                              child: SizedBox(
                                                 width: 150.0,
                                                 child: TextFormField(
                                                   controller: _model
@@ -386,7 +384,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                   focusNode: _model
                                                       .emailAddressFocusNode3,
                                                   autofocus: true,
-                                                  autofillHints: [
+                                                  autofillHints: const [
                                                     AutofillHints.countryName
                                                   ],
                                                   obscureText: false,
@@ -404,14 +402,14 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              Color(0xFF57636C),
+                                                              const Color(0xFF57636C),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.w500,
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFF1F4F8),
                                                         width: 2.0,
@@ -422,7 +420,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     focusedBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFF4B39EF),
                                                         width: 2.0,
@@ -433,7 +431,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     errorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFFF5963),
                                                         width: 2.0,
@@ -444,7 +442,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     focusedErrorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFFF5963),
                                                         width: 2.0,
@@ -455,7 +453,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     filled: true,
                                                     fillColor:
-                                                        Color(0xFFF1F4F8),
+                                                        const Color(0xFFF1F4F8),
                                                     prefixIcon: Icon(
                                                       Icons.location_pin,
                                                       color:
@@ -471,7 +469,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            Color(0xFF101213),
+                                                            const Color(0xFF101213),
                                                         fontSize: 14.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -486,9 +484,9 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                         ],
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             30.0, 0.0, 30.0, 16.0),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 370.0,
                                           child: TextFormField(
                                             controller:
@@ -496,7 +494,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                             focusNode:
                                                 _model.emailAddressFocusNode4,
                                             autofocus: true,
-                                            autofillHints: [
+                                            autofillHints: const [
                                               AutofillHints.email
                                             ],
                                             obscureText: false,
@@ -512,12 +510,12 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                               enabledBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFFF1F4F8),
                                                   width: 2.0,
                                                 ),
@@ -525,7 +523,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     BorderRadius.circular(12.0),
                                               ),
                                               focusedBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFF4B39EF),
                                                   width: 2.0,
                                                 ),
@@ -533,7 +531,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     BorderRadius.circular(12.0),
                                               ),
                                               errorBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFFFF5963),
                                                   width: 2.0,
                                                 ),
@@ -542,7 +540,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                               ),
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFFFF5963),
                                                   width: 2.0,
                                                 ),
@@ -550,7 +548,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     BorderRadius.circular(12.0),
                                               ),
                                               filled: true,
-                                              fillColor: Color(0xFFF1F4F8),
+                                              fillColor: const Color(0xFFF1F4F8),
                                               prefixIcon: Icon(
                                                 Icons.directions_boat,
                                                 color:
@@ -563,7 +561,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                 .override(
                                                   fontFamily:
                                                       'Plus Jakarta Sans',
-                                                  color: Color(0xFF101213),
+                                                  color: const Color(0xFF101213),
                                                   fontSize: 14.0,
                                                   fontWeight: FontWeight.w500,
                                                 ),
@@ -574,9 +572,9 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             30.0, 0.0, 30.0, 16.0),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 370.0,
                                           child: TextFormField(
                                             controller:
@@ -584,7 +582,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                             focusNode:
                                                 _model.emailAddressFocusNode5,
                                             autofocus: true,
-                                            autofillHints: [
+                                            autofillHints: const [
                                               AutofillHints.email
                                             ],
                                             obscureText: false,
@@ -600,12 +598,12 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                               enabledBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFFF1F4F8),
                                                   width: 2.0,
                                                 ),
@@ -613,7 +611,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     BorderRadius.circular(12.0),
                                               ),
                                               focusedBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFF4B39EF),
                                                   width: 2.0,
                                                 ),
@@ -621,7 +619,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     BorderRadius.circular(12.0),
                                               ),
                                               errorBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFFFF5963),
                                                   width: 2.0,
                                                 ),
@@ -630,7 +628,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                               ),
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0xFFFF5963),
                                                   width: 2.0,
                                                 ),
@@ -638,7 +636,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     BorderRadius.circular(12.0),
                                               ),
                                               filled: true,
-                                              fillColor: Color(0xFFF1F4F8),
+                                              fillColor: const Color(0xFFF1F4F8),
                                               prefixIcon: Icon(
                                                 Icons.dehaze,
                                                 color:
@@ -651,7 +649,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                 .override(
                                                   fontFamily:
                                                       'Plus Jakarta Sans',
-                                                  color: Color(0xFF101213),
+                                                  color: const Color(0xFF101213),
                                                   fontSize: 14.0,
                                                   fontWeight: FontWeight.w500,
                                                 ),
@@ -662,7 +660,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             30.0, 0.0, 0.0, 5.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -692,10 +690,10 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                         children: [
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       30.0, 0.0, 30.0, 16.0),
-                                              child: Container(
+                                              child: SizedBox(
                                                 width: 150.0,
                                                 child: TextFormField(
                                                   controller: _model
@@ -703,7 +701,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                   focusNode: _model
                                                       .emailAddressFocusNode6,
                                                   autofocus: true,
-                                                  autofillHints: [
+                                                  autofillHints: const [
                                                     AutofillHints.countryName
                                                   ],
                                                   obscureText: false,
@@ -721,14 +719,14 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              Color(0xFF57636C),
+                                                              const Color(0xFF57636C),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.w500,
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFF1F4F8),
                                                         width: 2.0,
@@ -739,7 +737,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     focusedBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFF4B39EF),
                                                         width: 2.0,
@@ -750,7 +748,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     errorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFFF5963),
                                                         width: 2.0,
@@ -761,7 +759,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     focusedErrorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFFF5963),
                                                         width: 2.0,
@@ -772,7 +770,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     filled: true,
                                                     fillColor:
-                                                        Color(0xFFF1F4F8),
+                                                        const Color(0xFFF1F4F8),
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -781,7 +779,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            Color(0xFF101213),
+                                                            const Color(0xFF101213),
                                                         fontSize: 14.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -796,7 +794,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                         ],
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             30.0, 0.0, 0.0, 5.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -822,13 +820,13 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 0.0, 10.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 15.0, 20.0, 0.0),
                                               child: Row(
@@ -898,7 +896,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                                       .secondaryText,
                                                                 ),
                                                         iconColor:
-                                                            Color(0xFF6E189D),
+                                                            const Color(0xFF6E189D),
                                                         iconSize: 18.0,
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -981,7 +979,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                                       .secondaryText,
                                                                 ),
                                                         iconColor:
-                                                            Color(0xFF6E189D),
+                                                            const Color(0xFF6E189D),
                                                         iconSize: 18.0,
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -1063,7 +1061,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                                       .secondaryText,
                                                                 ),
                                                         iconColor:
-                                                            Color(0xFF6E189D),
+                                                            const Color(0xFF6E189D),
                                                         iconSize: 18.0,
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -1088,7 +1086,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 15.0, 20.0, 0.0),
                                               child: Row(
@@ -1159,7 +1157,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                                       .secondaryText,
                                                                 ),
                                                         iconColor:
-                                                            Color(0xFF6E189D),
+                                                            const Color(0xFF6E189D),
                                                         iconSize: 18.0,
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -1241,7 +1239,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                                       .secondaryText,
                                                                 ),
                                                         iconColor:
-                                                            Color(0xFF6E189D),
+                                                            const Color(0xFF6E189D),
                                                         iconSize: 18.0,
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -1323,7 +1321,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                                       .secondaryText,
                                                                 ),
                                                         iconColor:
-                                                            Color(0xFF6E189D),
+                                                            const Color(0xFF6E189D),
                                                         iconSize: 18.0,
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -1348,7 +1346,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 15.0, 20.0, 0.0),
                                               child: Row(
@@ -1418,7 +1416,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                                       .secondaryText,
                                                                 ),
                                                         iconColor:
-                                                            Color(0xFF6E189D),
+                                                            const Color(0xFF6E189D),
                                                         iconSize: 18.0,
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -1500,7 +1498,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                                       .secondaryText,
                                                                 ),
                                                         iconColor:
-                                                            Color(0xFF6E189D),
+                                                            const Color(0xFF6E189D),
                                                         iconSize: 18.0,
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -1582,7 +1580,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                                       .secondaryText,
                                                                 ),
                                                         iconColor:
-                                                            Color(0xFF6E189D),
+                                                            const Color(0xFF6E189D),
                                                         iconSize: 18.0,
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -1607,7 +1605,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 15.0, 20.0, 0.0),
                                               child: Row(
@@ -1677,7 +1675,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                                       .secondaryText,
                                                                 ),
                                                         iconColor:
-                                                            Color(0xFF6E189D),
+                                                            const Color(0xFF6E189D),
                                                         iconSize: 18.0,
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -1759,7 +1757,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                                       .secondaryText,
                                                                 ),
                                                         iconColor:
-                                                            Color(0xFF6E189D),
+                                                            const Color(0xFF6E189D),
                                                         iconSize: 18.0,
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -1784,10 +1782,10 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 20.0, 20.0, 16.0),
-                                              child: Container(
+                                              child: SizedBox(
                                                 width: 370.0,
                                                 child: TextFormField(
                                                   controller: _model
@@ -1795,7 +1793,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                   focusNode: _model
                                                       .emailAddressFocusNode7,
                                                   autofocus: true,
-                                                  autofillHints: [
+                                                  autofillHints: const [
                                                     AutofillHints.email
                                                   ],
                                                   obscureText: false,
@@ -1813,14 +1811,14 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              Color(0xFF57636C),
+                                                              const Color(0xFF57636C),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.w500,
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFF1F4F8),
                                                         width: 2.0,
@@ -1831,7 +1829,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     focusedBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFF4B39EF),
                                                         width: 2.0,
@@ -1842,7 +1840,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     errorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFFF5963),
                                                         width: 2.0,
@@ -1853,7 +1851,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     focusedErrorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFFF5963),
                                                         width: 2.0,
@@ -1864,7 +1862,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     ),
                                                     filled: true,
                                                     fillColor:
-                                                        Color(0xFFF1F4F8),
+                                                        const Color(0xFFF1F4F8),
                                                     prefixIcon: Icon(
                                                       Icons.dehaze,
                                                       color:
@@ -1880,7 +1878,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            Color(0xFF101213),
+                                                            const Color(0xFF101213),
                                                         fontSize: 14.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -1892,10 +1890,10 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                               ),
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.05),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 10.0),
                                                 child: FFButtonWidget(
@@ -1907,7 +1905,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                       .getText(
                                                     'u9s8rm21' /* Add photos to your boat */,
                                                   ),
-                                                  icon: Icon(
+                                                  icon: const Icon(
                                                     Icons.add,
                                                     size: 15.0,
                                                   ),
@@ -1915,14 +1913,14 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     width: 270.0,
                                                     height: 50.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
-                                                    color: Color(0xFFFFFDFD),
+                                                    color: const Color(0xFFFFFDFD),
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleMedium
@@ -1933,7 +1931,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                               .plumpPurple,
                                                         ),
                                                     elevation: 2.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Color(0xFF6E189D),
                                                       width: 1.0,
                                                     ),
@@ -1945,10 +1943,10 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                               ),
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.05),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 50.0, 0.0, 50.0),
                                                 child: FFButtonWidget(
@@ -1964,14 +1962,14 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                     width: 270.0,
                                                     height: 50.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
-                                                    color: Color(0xFF6E189D),
+                                                    color: const Color(0xFF6E189D),
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleMedium
@@ -1980,7 +1978,7 @@ class _BoatdetailsWidgetState extends State<BoatdetailsWidget> {
                                                           color: Colors.white,
                                                         ),
                                                     elevation: 2.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),

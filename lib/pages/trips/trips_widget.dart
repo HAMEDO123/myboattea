@@ -1,17 +1,14 @@
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'trips_model.dart';
 export 'trips_model.dart';
 
 class TripsWidget extends StatefulWidget {
-  const TripsWidget({Key? key}) : super(key: key);
+  const TripsWidget({super.key});
 
   @override
   _TripsWidgetState createState() => _TripsWidgetState();
@@ -67,26 +64,26 @@ class _TripsWidgetState extends State<TripsWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 6.0, 16.0, 6.0),
                             child: Container(
                               width: 53.0,
                               height: 53.0,
                               decoration: BoxDecoration(
-                                color: Color(0x4D9489F5),
+                                color: const Color(0x4D9489F5),
                                 shape: BoxShape.circle,
                                 border: Border.all(
-                                  color: Color(0xFF6E189D),
+                                  color: const Color(0xFF6E189D),
                                   width: 2.0,
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(2.0),
+                                padding: const EdgeInsets.all(2.0),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
                                   focusColor: Colors.transparent,
@@ -117,7 +114,7 @@ class _TripsWidgetState extends State<TripsWidget> {
                                   .headlineMedium
                                   .override(
                                     fontFamily: 'Outfit',
-                                    color: Color(0xFF15161E),
+                                    color: const Color(0xFF15161E),
                                     fontSize: 24.0,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -131,7 +128,7 @@ class _TripsWidgetState extends State<TripsWidget> {
                             onTap: () async {
                               context.pushNamed('tripdetails');
                             },
-                            child: Icon(
+                            child: const Icon(
                               Icons.add,
                               color: Color(0xFF6E189D),
                               size: 35.0,
@@ -146,7 +143,7 @@ class _TripsWidgetState extends State<TripsWidget> {
                       children: [
                         Container(
                           width: double.infinity,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFFF1F4F8),
                           ),
                           child: Column(
@@ -154,7 +151,7 @@ class _TripsWidgetState extends State<TripsWidget> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 16.0, 0.0, 12.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -164,7 +161,7 @@ class _TripsWidgetState extends State<TripsWidget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: Color(0xFF606A85),
+                                        color: const Color(0xFF606A85),
                                         fontSize: 14.0,
                                         fontWeight: FontWeight.w500,
                                       ),
@@ -177,7 +174,7 @@ class _TripsWidgetState extends State<TripsWidget> {
                                 builder: (context, snapshot) {
                                   // Customize what your widget looks like when it's loading.
                                   if (!snapshot.hasData) {
-                                    return Center(
+                                    return const Center(
                                       child: SizedBox(
                                         width: 50.0,
                                         height: 50.0,
@@ -200,14 +197,14 @@ class _TripsWidgetState extends State<TripsWidget> {
                                       final columnTodosRow =
                                           columnTodosRowList[columnIndex];
                                       return Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 15.0),
                                         child: Container(
                                           width: double.infinity,
                                           height: 300.0,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -217,12 +214,12 @@ class _TripsWidgetState extends State<TripsWidget> {
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                             border: Border.all(
-                                              color: Color(0xFFE5E7EB),
+                                              color: const Color(0xFFE5E7EB),
                                               width: 1.0,
                                             ),
                                           ),
                                           child: Padding(
-                                            padding: EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.all(8.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               crossAxisAlignment:
@@ -246,11 +243,11 @@ class _TripsWidgetState extends State<TripsWidget> {
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, -1.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       8.0,
@@ -279,7 +276,7 @@ class _TripsWidgetState extends State<TripsWidget> {
                                                                         32.0,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0x9AFFFFFF),
                                                                       borderRadius:
                                                                           BorderRadius.circular(
@@ -287,19 +284,19 @@ class _TripsWidgetState extends State<TripsWidget> {
                                                                       border:
                                                                           Border
                                                                               .all(
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFFE5E7EB),
                                                                         width:
                                                                             2.0,
                                                                       ),
                                                                     ),
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           8.0,
@@ -314,7 +311,7 @@ class _TripsWidgetState extends State<TripsWidget> {
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Plus Jakarta Sans',
-                                                                              color: Color(0xFF15161E),
+                                                                              color: const Color(0xFF15161E),
                                                                               fontSize: 14.0,
                                                                               fontWeight: FontWeight.w500,
                                                                             ),
@@ -331,7 +328,7 @@ class _TripsWidgetState extends State<TripsWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 8.0, 0.0, 0.0),
                                                   child: Text(
@@ -342,7 +339,7 @@ class _TripsWidgetState extends State<TripsWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF15161E),
+                                                              const Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -353,7 +350,7 @@ class _TripsWidgetState extends State<TripsWidget> {
                                                   mainAxisSize:
                                                       MainAxisSize.max,
                                                   children: [
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.location_on,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -371,14 +368,14 @@ class _TripsWidgetState extends State<TripsWidget> {
                                                   ],
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 10.0),
                                                   child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
                                                     children: [
-                                                      Icon(
+                                                      const Icon(
                                                         Icons.person_rounded,
                                                         color:
                                                             Color(0xFF2F3171),

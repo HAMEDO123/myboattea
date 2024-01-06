@@ -1,6 +1,4 @@
 import 'dart:convert';
-import 'dart:typed_data';
-import '../schema/structs/index.dart';
 
 import '/flutter_flow/flutter_flow_util.dart';
 import 'api_manager.dart';
@@ -36,19 +34,19 @@ class BoatsCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "name": "${name}",
-  "pasengers": ${passenger},
-  "plate": "${plate}",
-  "location": "${location}",
-  "type": "${type}",
-  "details": "${details}",
-  "way": "${way}",
-  "Meal": ${meal},
-  "Drinks": ${drinks},
-  "Activites": ${activites},
-  "Ice_box": ${iceBox},
-  "Bathroom": ${bathroom},
-  "Kitchen": ${kitchen}
+  "name": "$name",
+  "pasengers": $passenger,
+  "plate": "$plate",
+  "location": "$location",
+  "type": "$type",
+  "details": "$details",
+  "way": "$way",
+  "Meal": $meal,
+  "Drinks": $drinks,
+  "Activites": $activites,
+  "Ice_box": $iceBox,
+  "Bathroom": $bathroom,
+  "Kitchen": $kitchen
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'boats',
@@ -105,9 +103,9 @@ class SignupCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "password": "${password}", 
-  "name": "${name}",
-  "email": "${email}"
+  "password": "$password", 
+  "name": "$name",
+  "email": "$email"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'signup',

@@ -4,16 +4,13 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'auth2_model.dart';
 export 'auth2_model.dart';
 
 class Auth2Widget extends StatefulWidget {
-  const Auth2Widget({Key? key}) : super(key: key);
+  const Auth2Widget({super.key});
 
   @override
   _Auth2WidgetState createState() => _Auth2WidgetState();
@@ -41,15 +38,15 @@ class _Auth2WidgetState extends State<Auth2Widget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 400.ms,
-          begin: Offset(0.0, 80.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 80.0),
+          end: const Offset(0.0, 0.0),
         ),
         ScaleEffect(
           curve: Curves.easeInOut,
           delay: 150.ms,
           duration: 400.ms,
-          begin: Offset(0.8, 0.8),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.8, 0.8),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -68,8 +65,8 @@ class _Auth2WidgetState extends State<Auth2Widget>
           curve: Curves.easeInOut,
           delay: 300.ms,
           duration: 400.ms,
-          begin: Offset(0.0, 20.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 20.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -131,25 +128,25 @@ class _Auth2WidgetState extends State<Auth2Widget>
             body: Stack(
               children: [
                 Align(
-                  alignment: AlignmentDirectional(0.0, -1.21),
+                  alignment: const AlignmentDirectional(0.0, -1.21),
                   child: Container(
                     width: double.infinity,
                     height: 270.0,
                     decoration: BoxDecoration(
-                      color: Color(0xFFF1F4F8),
+                      color: const Color(0xFFF1F4F8),
                       image: DecorationImage(
                         fit: BoxFit.cover,
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         image: Image.asset(
                           'assets/images/Blue_Purple_Gradient_Grand_Opening_Medium_Banner.png',
                         ).image,
                       ),
                       borderRadius: BorderRadius.circular(16.0),
                     ),
-                    alignment: AlignmentDirectional(0.0, 1.0),
+                    alignment: const AlignmentDirectional(0.0, 1.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 80.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 80.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
                           '206fduy6' /* welcome to MyBoat team */,
@@ -167,10 +164,10 @@ class _Auth2WidgetState extends State<Auth2Widget>
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 170.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 170.0, 0.0, 0.0),
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
@@ -179,12 +176,12 @@ class _Auth2WidgetState extends State<Auth2Widget>
                           Container(
                             width: double.infinity,
                             height: 1100.0,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 570.0,
                             ),
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x33000000),
@@ -193,23 +190,23 @@ class _Auth2WidgetState extends State<Auth2Widget>
                               ],
                               borderRadius: BorderRadius.circular(50.0),
                               border: Border.all(
-                                color: Color(0xFFF1F4F8),
+                                color: const Color(0xFFF1F4F8),
                                 width: 2.0,
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 24.0, 0.0, 0.0),
                               child: Column(
                                 children: [
                                   Align(
-                                    alignment: Alignment(0.0, 0),
+                                    alignment: const Alignment(0.0, 0),
                                     child: TabBar(
                                       isScrollable: true,
-                                      labelColor: Color(0xFF6E189D),
-                                      unselectedLabelColor: Color(0xFF57636C),
+                                      labelColor: const Color(0xFF6E189D),
+                                      unselectedLabelColor: const Color(0xFF57636C),
                                       labelPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               32.0, 0.0, 32.0, 0.0),
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .titleMedium
@@ -219,8 +216,8 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                             fontSize: 18.0,
                                             fontWeight: FontWeight.w500,
                                           ),
-                                      unselectedLabelStyle: TextStyle(),
-                                      indicatorColor: Color(0xFF6E189D),
+                                      unselectedLabelStyle: const TextStyle(),
+                                      indicatorColor: const Color(0xFF6E189D),
                                       indicatorWeight: 3.0,
                                       tabs: [
                                         Tab(
@@ -248,16 +245,16 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 20.0, 0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         30.0, 0.0, 30.0, 16.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: 370.0,
                                                   child: TextFormField(
                                                     controller:
@@ -265,7 +262,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                     focusNode:
                                                         _model.naFocusNode,
                                                     autofocus: true,
-                                                    autofillHints: [
+                                                    autofillHints: const [
                                                       AutofillHints.username
                                                     ],
                                                     obscureText: false,
@@ -283,7 +280,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Plus Jakarta Sans',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF57636C),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -292,7 +289,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFFF1F4F8),
                                                           width: 2.0,
@@ -303,7 +300,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       ),
                                                       focusedBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFF4B39EF),
                                                           width: 2.0,
@@ -314,7 +311,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       ),
                                                       errorBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFFFF5963),
                                                           width: 2.0,
@@ -325,7 +322,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       ),
                                                       focusedErrorBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFFFF5963),
                                                           width: 2.0,
@@ -336,7 +333,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       ),
                                                       filled: true,
                                                       fillColor:
-                                                          Color(0xFFF1F4F8),
+                                                          const Color(0xFFF1F4F8),
                                                       prefixIcon: Icon(
                                                         Icons.person_rounded,
                                                         color:
@@ -352,7 +349,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              Color(0xFF101213),
+                                                              const Color(0xFF101213),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -366,10 +363,10 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         30.0, 0.0, 30.0, 16.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: 370.0,
                                                   child: TextFormField(
                                                     controller: _model
@@ -377,7 +374,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                     focusNode: _model
                                                         .emailAddressFocusNode1,
                                                     autofocus: true,
-                                                    autofillHints: [
+                                                    autofillHints: const [
                                                       AutofillHints.password
                                                     ],
                                                     obscureText: !_model
@@ -396,7 +393,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Plus Jakarta Sans',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF57636C),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -405,7 +402,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFFF1F4F8),
                                                           width: 2.0,
@@ -416,7 +413,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       ),
                                                       focusedBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFF4B39EF),
                                                           width: 2.0,
@@ -427,7 +424,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       ),
                                                       errorBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFFFF5963),
                                                           width: 2.0,
@@ -438,7 +435,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       ),
                                                       focusedErrorBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFFFF5963),
                                                           width: 2.0,
@@ -449,7 +446,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       ),
                                                       filled: true,
                                                       fillColor:
-                                                          Color(0xFFF1F4F8),
+                                                          const Color(0xFFF1F4F8),
                                                       prefixIcon: Icon(
                                                         Icons.password_sharp,
                                                         color:
@@ -474,7 +471,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               : Icons
                                                                   .visibility_off_outlined,
                                                           color:
-                                                              Color(0xFF757575),
+                                                              const Color(0xFF757575),
                                                           size: 22.0,
                                                         ),
                                                       ),
@@ -486,7 +483,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              Color(0xFF101213),
+                                                              const Color(0xFF101213),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -498,10 +495,10 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.05),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 40.0, 0.0, 50.0),
                                                   child: FFButtonWidget(
@@ -535,20 +532,20 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       width: 270.0,
                                                       height: 50.0,
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
                                                       iconPadding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
-                                                      color: Color(0xFF6E189D),
+                                                      color: const Color(0xFF6E189D),
                                                       textStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -560,7 +557,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                     .white,
                                                               ),
                                                       elevation: 2.0,
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Colors.transparent,
                                                         width: 1.0,
@@ -577,10 +574,10 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, -1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 16.0, 24.0, 0.0),
                                             child: SingleChildScrollView(
                                               child: Column(
@@ -596,13 +593,13 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                     Container(
                                                       width: 230.0,
                                                       height: 40.0,
-                                                      decoration: BoxDecoration(
+                                                      decoration: const BoxDecoration(
                                                         color: Colors.white,
                                                       ),
                                                     ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 30.0),
                                                     child: Text(
@@ -619,7 +616,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF6E189D),
                                                             fontSize: 24.0,
                                                             fontWeight:
@@ -633,13 +630,13 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     30.0,
                                                                     0.0,
                                                                     30.0,
                                                                     16.0),
-                                                        child: Container(
+                                                        child: SizedBox(
                                                           width: 370.0,
                                                           child: TextFormField(
                                                             controller: _model
@@ -647,7 +644,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                             focusNode: _model
                                                                 .paFocusNode,
                                                             autofocus: true,
-                                                            autofillHints: [
+                                                            autofillHints: const [
                                                               AutofillHints
                                                                   .newPassword
                                                             ],
@@ -670,7 +667,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                       .override(
                                                                         fontFamily:
                                                                             'Plus Jakarta Sans',
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFF57636C),
                                                                         fontSize:
                                                                             14.0,
@@ -680,7 +677,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               enabledBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0xFFF1F4F8),
                                                                   width: 2.0,
@@ -693,7 +690,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               focusedBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0xFF4B39EF),
                                                                   width: 2.0,
@@ -706,7 +703,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               errorBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0xFFFF5963),
                                                                   width: 2.0,
@@ -719,7 +716,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               focusedErrorBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0xFFFF5963),
                                                                   width: 2.0,
@@ -730,7 +727,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                             12.0),
                                                               ),
                                                               filled: true,
-                                                              fillColor: Color(
+                                                              fillColor: const Color(
                                                                   0xFFF1F4F8),
                                                               prefixIcon: Icon(
                                                                 Icons.mail,
@@ -745,7 +742,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF101213),
                                                                   fontSize:
                                                                       14.0,
@@ -765,13 +762,13 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     30.0,
                                                                     0.0,
                                                                     30.0,
                                                                     16.0),
-                                                        child: Container(
+                                                        child: SizedBox(
                                                           width: 370.0,
                                                           child: TextFormField(
                                                             controller: _model
@@ -779,7 +776,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                             focusNode: _model
                                                                 .emailAddressFocusNode2,
                                                             autofocus: true,
-                                                            autofillHints: [
+                                                            autofillHints: const [
                                                               AutofillHints
                                                                   .password
                                                             ],
@@ -800,7 +797,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                       .override(
                                                                         fontFamily:
                                                                             'Plus Jakarta Sans',
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFF57636C),
                                                                         fontSize:
                                                                             14.0,
@@ -810,7 +807,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               enabledBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0xFFF1F4F8),
                                                                   width: 2.0,
@@ -823,7 +820,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               focusedBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0xFF4B39EF),
                                                                   width: 2.0,
@@ -836,7 +833,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               errorBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0xFFFF5963),
                                                                   width: 2.0,
@@ -849,7 +846,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                               focusedErrorBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0xFFFF5963),
                                                                   width: 2.0,
@@ -860,7 +857,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                             12.0),
                                                               ),
                                                               filled: true,
-                                                              fillColor: Color(
+                                                              fillColor: const Color(
                                                                   0xFFF1F4F8),
                                                               prefixIcon: Icon(
                                                                 Icons
@@ -887,7 +884,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                           .visibility_outlined
                                                                       : Icons
                                                                           .visibility_off_outlined,
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF757575),
                                                                   size: 22.0,
                                                                 ),
@@ -899,7 +896,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF101213),
                                                                   fontSize:
                                                                       14.0,
@@ -916,11 +913,11 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -940,14 +937,14 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                 FFButtonOptions(
                                                               height: 44.0,
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           32.0,
                                                                           0.0,
                                                                           32.0,
                                                                           0.0),
                                                               iconPadding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -971,7 +968,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                       ),
                                                               elevation: 0.0,
                                                               borderSide:
-                                                                  BorderSide(
+                                                                  const BorderSide(
                                                                 color: Colors
                                                                     .white,
                                                                 width: 2.0,
@@ -980,7 +977,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                   BorderRadius
                                                                       .circular(
                                                                           40.0),
-                                                              hoverColor: Color(
+                                                              hoverColor: const Color(
                                                                   0xFFF1F4F8),
                                                             ),
                                                           ),
@@ -988,7 +985,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     20.0,
                                                                     0.0,
@@ -1000,11 +997,11 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0,
                                                                       0.05),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         50.0,
@@ -1050,19 +1047,19 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                         270.0,
                                                                     height:
                                                                         50.0,
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
                                                                     iconPadding:
-                                                                        EdgeInsetsDirectional.fromSTEB(
+                                                                        const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF6E189D),
                                                                     textStyle: FlutterFlowTheme.of(
                                                                             context)
@@ -1076,7 +1073,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                     elevation:
                                                                         2.0,
                                                                     borderSide:
-                                                                        BorderSide(
+                                                                        const BorderSide(
                                                                       color: Colors
                                                                           .transparent,
                                                                       width:

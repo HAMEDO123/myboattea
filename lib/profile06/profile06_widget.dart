@@ -4,16 +4,13 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'profile06_model.dart';
 export 'profile06_model.dart';
 
 class Profile06Widget extends StatefulWidget {
-  const Profile06Widget({Key? key}) : super(key: key);
+  const Profile06Widget({super.key});
 
   @override
   _Profile06WidgetState createState() => _Profile06WidgetState();
@@ -57,7 +54,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
-          return Scaffold(
+          return const Scaffold(
             backgroundColor: Color(0xFFF1F4F8),
             body: Center(
               child: SizedBox(
@@ -86,7 +83,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                   : FocusScope.of(context).unfocus(),
               child: Scaffold(
                 key: scaffoldKey,
-                backgroundColor: Color(0xFFF1F4F8),
+                backgroundColor: const Color(0xFFF1F4F8),
                 appBar: AppBar(
                   backgroundColor: Colors.white,
                   automaticallyImplyLeading: false,
@@ -95,7 +92,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                     borderRadius: 30.0,
                     borderWidth: 1.0,
                     buttonSize: 60.0,
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.arrow_back_rounded,
                       color: Color(0xFF6E189D),
                       size: 30.0,
@@ -110,12 +107,12 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                     ),
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
                           fontFamily: 'Plus Jakarta Sans',
-                          color: Color(0xFF6E189D),
+                          color: const Color(0xFF6E189D),
                           fontSize: 16.0,
                           fontWeight: FontWeight.normal,
                         ),
                   ),
-                  actions: [],
+                  actions: const [],
                   centerTitle: false,
                   elevation: 0.0,
                 ),
@@ -130,7 +127,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   10.0, 10.0, 10.0, 10.0),
                               child: Container(
                                 width: double.infinity,
@@ -144,14 +141,14 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                       'assets/images/black_white_modern_id_card_(2).png',
                                     ).image,
                                   ),
-                                  boxShadow: [
+                                  boxShadow: const [
                                     BoxShadow(
                                       blurRadius: 4.0,
                                       color: Color(0x33000000),
                                       offset: Offset(0.0, 4.0),
                                     )
                                   ],
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(20.0),
                                     bottomRight: Radius.circular(20.0),
                                     topLeft: Radius.circular(20.0),
@@ -161,7 +158,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                 child: Stack(
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           150.0, 100.0, 0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -232,7 +229,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                                 builder: (context, snapshot) {
                                                   // Customize what your widget looks like when it's loading.
                                                   if (!snapshot.hasData) {
-                                                    return Center(
+                                                    return const Center(
                                                       child: SizedBox(
                                                         width: 50.0,
                                                         height: 50.0,
@@ -259,7 +256,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                                   return Text(
                                                     valueOrDefault<String>(
                                                       textOwnersDetailsRow?.id
-                                                          ?.toString(),
+                                                          .toString(),
                                                       '1',
                                                     ),
                                                     style: FlutterFlowTheme.of(
@@ -275,12 +272,12 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-0.9, -0.23),
+                                          const AlignmentDirectional(-0.9, -0.23),
                                       child: Container(
                                         width: 125.0,
                                         height: 125.0,
                                         clipBehavior: Clip.antiAlias,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
                                         child: Image.asset(
@@ -291,7 +288,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-0.79, 1.09),
+                                          const AlignmentDirectional(-0.79, 1.09),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
                                           'eyss1kpl' /* MyBoat Team 
@@ -312,7 +309,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-0.14, 1.15),
+                                          const AlignmentDirectional(-0.14, 1.15),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
                                           'b98qot5g' /* membership
@@ -338,7 +335,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
@@ -348,14 +345,14 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                 .labelLarge
                                 .override(
                                   fontFamily: 'Plus Jakarta Sans',
-                                  color: Color(0xFF57636C),
+                                  color: const Color(0xFF57636C),
                                   fontSize: 16.0,
                                   fontWeight: FontWeight.normal,
                                 ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 12.0, 16.0, 0.0),
                           child: FlutterFlowLanguageSelector(
                             width: double.infinity,
@@ -364,9 +361,9 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                             borderColor: Colors.transparent,
                             dropdownColor:
                                 FlutterFlowTheme.of(context).primaryBtnText,
-                            dropdownIconColor: Color(0xFF6E189D),
+                            dropdownIconColor: const Color(0xFF6E189D),
                             borderRadius: 8.0,
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                               color: Color(0xFF6E189D),
                               fontWeight: FontWeight.normal,
                               fontSize: 13.0,
@@ -381,7 +378,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
@@ -391,21 +388,21 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                 .labelLarge
                                 .override(
                                   fontFamily: 'Plus Jakarta Sans',
-                                  color: Color(0xFF57636C),
+                                  color: const Color(0xFF57636C),
                                   fontSize: 16.0,
                                   fontWeight: FontWeight.normal,
                                 ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 12.0, 16.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             height: 60.0,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 5.0,
                                   color: Color(0x3416202A),
@@ -416,18 +413,18 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                               shape: BoxShape.rectangle,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.account_circle_outlined,
                                     color: Color(0xFF6E189D),
                                     size: 24.0,
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -437,14 +434,14 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                             .bodyLarge
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF6E189D),
+                                              color: const Color(0xFF6E189D),
                                               fontSize: 16.0,
                                               fontWeight: FontWeight.normal,
                                             ),
                                       ),
                                     ),
                                   ),
-                                  Align(
+                                  const Align(
                                     alignment: AlignmentDirectional(0.9, 0.0),
                                     child: Icon(
                                       Icons.arrow_forward_ios,
@@ -458,14 +455,14 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 12.0, 16.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             height: 60.0,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 5.0,
                                   color: Color(0x3416202A),
@@ -476,18 +473,18 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                               shape: BoxShape.rectangle,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.password_sharp,
                                     color: Color(0xFF2F3171),
                                     size: 24.0,
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 0.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -512,7 +509,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                               .bodyLarge
                                               .override(
                                                 fontFamily: 'Plus Jakarta Sans',
-                                                color: Color(0xFF6E189D),
+                                                color: const Color(0xFF6E189D),
                                                 fontSize: 16.0,
                                                 fontWeight: FontWeight.normal,
                                               ),
@@ -520,7 +517,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                       ),
                                     ),
                                   ),
-                                  Icon(
+                                  const Icon(
                                     Icons.arrow_forward_ios,
                                     color: Color(0xFF6E189D),
                                     size: 18.0,
@@ -531,14 +528,14 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 12.0, 16.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             height: 60.0,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 5.0,
                                   color: Color(0x3416202A),
@@ -549,18 +546,18 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                               shape: BoxShape.rectangle,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.logout,
                                     color: Color(0xFF2F3171),
                                     size: 24.0,
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 0.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -585,7 +582,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                               .bodyLarge
                                               .override(
                                                 fontFamily: 'Plus Jakarta Sans',
-                                                color: Color(0xFF6E189D),
+                                                color: const Color(0xFF6E189D),
                                                 fontSize: 16.0,
                                                 fontWeight: FontWeight.normal,
                                               ),
@@ -593,7 +590,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                       ),
                                     ),
                                   ),
-                                  Icon(
+                                  const Icon(
                                     Icons.arrow_forward_ios,
                                     color: Color(0xFF6E189D),
                                     size: 18.0,
@@ -604,7 +601,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
@@ -614,14 +611,14 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                 .labelLarge
                                 .override(
                                   fontFamily: 'Plus Jakarta Sans',
-                                  color: Color(0xFF57636C),
+                                  color: const Color(0xFF57636C),
                                   fontSize: 16.0,
                                   fontWeight: FontWeight.normal,
                                 ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 12.0, 16.0, 0.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
@@ -636,7 +633,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                               height: 60.0,
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                boxShadow: [
+                                boxShadow: const [
                                   BoxShadow(
                                     blurRadius: 5.0,
                                     color: Color(0x3416202A),
@@ -647,18 +644,18 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                 shape: BoxShape.rectangle,
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.directions_boat_outlined,
                                       color: Color(0xFF6E189D),
                                       size: 24.0,
                                     ),
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -668,14 +665,14 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                               .bodyLarge
                                               .override(
                                                 fontFamily: 'Plus Jakarta Sans',
-                                                color: Color(0xFF6E189D),
+                                                color: const Color(0xFF6E189D),
                                                 fontSize: 16.0,
                                                 fontWeight: FontWeight.normal,
                                               ),
                                         ),
                                       ),
                                     ),
-                                    Align(
+                                    const Align(
                                       alignment: AlignmentDirectional(0.9, 0.0),
                                       child: Icon(
                                         Icons.arrow_forward_ios,
@@ -690,7 +687,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
@@ -700,21 +697,21 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                 .labelLarge
                                 .override(
                                   fontFamily: 'Plus Jakarta Sans',
-                                  color: Color(0xFF57636C),
+                                  color: const Color(0xFF57636C),
                                   fontSize: 16.0,
                                   fontWeight: FontWeight.normal,
                                 ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 12.0, 16.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             height: 60.0,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 5.0,
                                   color: Color(0x3416202A),
@@ -725,18 +722,18 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                               shape: BoxShape.rectangle,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.call,
                                     color: Color(0xFF6E189D),
                                     size: 24.0,
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -746,14 +743,14 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                             .bodyLarge
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF6E189D),
+                                              color: const Color(0xFF6E189D),
                                               fontSize: 16.0,
                                               fontWeight: FontWeight.normal,
                                             ),
                                       ),
                                     ),
                                   ),
-                                  Align(
+                                  const Align(
                                     alignment: AlignmentDirectional(0.9, 0.0),
                                     child: Icon(
                                       Icons.arrow_forward_ios,
@@ -767,14 +764,14 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 12.0, 16.0, 20.0),
                           child: Container(
                             width: double.infinity,
                             height: 60.0,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 5.0,
                                   color: Color(0x3416202A),
@@ -785,18 +782,18 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                               shape: BoxShape.rectangle,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.privacy_tip_rounded,
                                     color: Color(0xFF6E189D),
                                     size: 24.0,
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -806,14 +803,14 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                             .bodyLarge
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF6E189D),
+                                              color: const Color(0xFF6E189D),
                                               fontSize: 16.0,
                                               fontWeight: FontWeight.normal,
                                             ),
                                       ),
                                     ),
                                   ),
-                                  Align(
+                                  const Align(
                                     alignment: AlignmentDirectional(0.9, 0.0),
                                     child: Icon(
                                       Icons.arrow_forward_ios,

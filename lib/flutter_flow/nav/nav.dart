@@ -1,22 +1,13 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-import '/backend/backend.dart';
-import '/backend/schema/structs/index.dart';
 
-import '/backend/supabase/supabase.dart';
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
 import '/main.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -81,24 +72,24 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : Auth2Widget(),
+          appStateNotifier.loggedIn ? const NavBarPage() : const Auth2Widget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : Auth2Widget(),
+              appStateNotifier.loggedIn ? const NavBarPage() : const Auth2Widget(),
           routes: [
             FFRoute(
               name: 'Auth2',
               path: 'auth2',
-              builder: (context, params) => Auth2Widget(),
+              builder: (context, params) => const Auth2Widget(),
             ),
             FFRoute(
               name: 'home',
               path: 'home',
               builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'home')
+                  ? const NavBarPage(initialPage: 'home')
                   : HomeWidget(
                       boats: params.getParam('boats', ParamType.int),
                     ),
@@ -107,47 +98,47 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'Profile06',
               path: 'profile06',
               builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'Profile06')
-                  : Profile06Widget(),
+                  ? const NavBarPage(initialPage: 'Profile06')
+                  : const Profile06Widget(),
             ),
             FFRoute(
               name: 'Boatdetails',
               path: 'boatdetails',
-              builder: (context, params) => BoatdetailsWidget(),
+              builder: (context, params) => const BoatdetailsWidget(),
             ),
             FFRoute(
               name: 'Activeties',
               path: 'activeties',
-              builder: (context, params) => ActivetiesWidget(),
+              builder: (context, params) => const ActivetiesWidget(),
             ),
             FFRoute(
               name: 'Ownerdetails',
               path: 'ownerdetails',
-              builder: (context, params) => OwnerdetailsWidget(),
+              builder: (context, params) => const OwnerdetailsWidget(),
             ),
             FFRoute(
               name: 'boatdeteailedit',
               path: 'boatdeteailedit',
-              builder: (context, params) => BoatdeteaileditWidget(),
+              builder: (context, params) => const BoatdeteaileditWidget(),
             ),
             FFRoute(
               name: 'tripdetails',
               path: 'tripdetails',
-              builder: (context, params) => TripdetailsWidget(),
+              builder: (context, params) => const TripdetailsWidget(),
             ),
             FFRoute(
               name: 'trips',
               path: 'trips',
               builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'trips')
-                  : TripsWidget(),
+                  ? const NavBarPage(initialPage: 'trips')
+                  : const TripsWidget(),
             ),
             FFRoute(
               name: 'activetis',
               path: 'activetis',
               builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'activetis')
-                  : ActivetisWidget(),
+                  ? const NavBarPage(initialPage: 'activetis')
+                  : const ActivetisWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -382,7 +373,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

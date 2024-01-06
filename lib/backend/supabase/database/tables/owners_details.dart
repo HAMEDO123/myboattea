@@ -10,7 +10,7 @@ class OwnersDetailsTable extends SupabaseTable<OwnersDetailsRow> {
 }
 
 class OwnersDetailsRow extends SupabaseDataRow {
-  OwnersDetailsRow(Map<String, dynamic> data) : super(data);
+  OwnersDetailsRow(super.data);
 
   @override
   SupabaseTable get table => OwnersDetailsTable();

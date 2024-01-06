@@ -1,15 +1,7 @@
-import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_calendar.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/random_data_util.dart' as random_data;
 import 'ownerdetails_widget.dart' show OwnerdetailsWidget;
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
-import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class OwnerdetailsModel extends FlutterFlowModel<OwnerdetailsWidget> {
   ///  State fields for stateful widgets in this page.
@@ -43,6 +35,7 @@ class OwnerdetailsModel extends FlutterFlowModel<OwnerdetailsWidget> {
 
   /// Initialization and disposal methods.
 
+  @override
   void initState(BuildContext context) {
     calendarSelectedDay = DateTimeRange(
       start: DateTime.now().startOfDay,
@@ -50,6 +43,7 @@ class OwnerdetailsModel extends FlutterFlowModel<OwnerdetailsWidget> {
     );
   }
 
+  @override
   void dispose() {
     emailAddressFocusNode1?.dispose();
     emailAddressController1?.dispose();

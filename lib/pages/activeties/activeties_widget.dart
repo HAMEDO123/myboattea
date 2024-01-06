@@ -1,19 +1,15 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'package:sticky_headers/sticky_headers.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'activeties_model.dart';
 export 'activeties_model.dart';
 
 class ActivetiesWidget extends StatefulWidget {
-  const ActivetiesWidget({Key? key}) : super(key: key);
+  const ActivetiesWidget({super.key});
 
   @override
   _ActivetiesWidgetState createState() => _ActivetiesWidgetState();
@@ -75,7 +71,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                       header: Container(
                         width: double.infinity,
                         height: 80.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Colors.white, Color(0x9AFFFFFF)],
                             stops: [0.0, 1.0],
@@ -84,14 +80,14 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 8.0, 16.0, 12.0),
                           child: Container(
                             width: double.infinity,
                             height: 60.0,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 3.0,
                                   color: Color(0x33000000),
@@ -100,25 +96,25 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                               ],
                               borderRadius: BorderRadius.circular(12.0),
                               border: Border.all(
-                                color: Color(0xFFE5E7EB),
+                                color: const Color(0xFFE5E7EB),
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 8.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.search_rounded,
                                     color: Color(0xFF606A85),
                                     size: 24.0,
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           4.0, 0.0, 0.0, 0.0),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: 200.0,
                                         child: TextFormField(
                                           controller: _model.textController,
@@ -135,7 +131,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                     .labelMedium
                                                     .override(
                                                       fontFamily: 'Outfit',
-                                                      color: Color(0xFF606A85),
+                                                      color: const Color(0xFF606A85),
                                                       fontSize: 14.0,
                                                       fontWeight:
                                                           FontWeight.w500,
@@ -145,7 +141,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                     .labelMedium
                                                     .override(
                                                       fontFamily: 'Outfit',
-                                                      color: Color(0xFF606A85),
+                                                      color: const Color(0xFF606A85),
                                                       fontSize: 14.0,
                                                       fontWeight:
                                                           FontWeight.w500,
@@ -162,11 +158,11 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Plus Jakarta Sans',
-                                                color: Color(0xFF15161E),
+                                                color: const Color(0xFF15161E),
                                                 fontSize: 14.0,
                                                 fontWeight: FontWeight.w500,
                                               ),
-                                          cursorColor: Color(0xFF6F61EF),
+                                          cursorColor: const Color(0xFF6F61EF),
                                           validator: _model
                                               .textControllerValidator
                                               .asValidator(context),
@@ -175,12 +171,12 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                     ),
                                   ),
                                   FlutterFlowIconButton(
-                                    borderColor: Color(0xFFE5E7EB),
+                                    borderColor: const Color(0xFFE5E7EB),
                                     borderRadius: 10.0,
                                     borderWidth: 1.0,
                                     buttonSize: 40.0,
                                     fillColor: Colors.white,
-                                    icon: Icon(
+                                    icon: const Icon(
                                       Icons.tune_rounded,
                                       color: Color(0xFF15161E),
                                       size: 24.0,
@@ -200,7 +196,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 10.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -208,7 +204,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -217,7 +213,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         width: 100.0,
                                         height: 100.0,
                                         clipBehavior: Clip.antiAlias,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
                                         child: Image.asset(
@@ -226,7 +222,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 7.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -244,7 +240,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -253,7 +249,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         width: 100.0,
                                         height: 100.0,
                                         clipBehavior: Clip.antiAlias,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
                                         child: Image.asset(
@@ -262,7 +258,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 7.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -281,7 +277,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -290,7 +286,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         width: 100.0,
                                         height: 100.0,
                                         clipBehavior: Clip.antiAlias,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
                                         child: Image.asset(
@@ -299,7 +295,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 7.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -324,7 +320,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                           ),
                           Container(
                             width: double.infinity,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xFFF1F4F8),
                             ),
                             child: Column(
@@ -332,7 +328,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 16.0, 0.0, 12.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
@@ -342,14 +338,14 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         .labelMedium
                                         .override(
                                           fontFamily: 'Outfit',
-                                          color: Color(0xFF606A85),
+                                          color: const Color(0xFF606A85),
                                           fontSize: 14.0,
                                           fontWeight: FontWeight.w500,
                                         ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 44.0),
                                   child: ListView(
                                     padding: EdgeInsets.zero,
@@ -358,14 +354,14 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                     scrollDirection: Axis.vertical,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           width: 220.0,
                                           height: 300.0,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -375,12 +371,12 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                             border: Border.all(
-                                              color: Color(0xFFE5E7EB),
+                                              color: const Color(0xFFE5E7EB),
                                               width: 1.0,
                                             ),
                                           ),
                                           child: Padding(
-                                            padding: EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.all(8.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               crossAxisAlignment:
@@ -404,11 +400,11 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, -1.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       8.0,
@@ -437,7 +433,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                         32.0,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0x9AFFFFFF),
                                                                       borderRadius:
                                                                           BorderRadius.circular(
@@ -445,19 +441,19 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                       border:
                                                                           Border
                                                                               .all(
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFFE5E7EB),
                                                                         width:
                                                                             2.0,
                                                                       ),
                                                                     ),
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           8.0,
@@ -472,7 +468,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Plus Jakarta Sans',
-                                                                              color: Color(0xFF15161E),
+                                                                              color: const Color(0xFF15161E),
                                                                               fontSize: 14.0,
                                                                               fontWeight: FontWeight.w500,
                                                                             ),
@@ -489,7 +485,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 8.0, 0.0, 0.0),
                                                   child: Text(
@@ -503,7 +499,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF15161E),
+                                                              const Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -525,7 +521,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.location_on,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -547,7 +543,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.person_rounded,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -563,7 +559,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -582,7 +578,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .getText(
                                                                 'buasyy20' /* $30 */,
                                                               ),
-                                                              style: TextStyle(
+                                                              style: const TextStyle(
                                                                 color: Color(
                                                                     0xFF6F61EF),
                                                               ),
@@ -599,7 +595,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF606A85),
                                                                     fontSize:
                                                                         12.0,
@@ -615,7 +611,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -627,7 +623,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -647,7 +643,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                 '99rcqu07' /* jeddah */,
                                                               ),
                                                               style:
-                                                                  TextStyle(),
+                                                                  const TextStyle(),
                                                             )
                                                           ],
                                                           style: FlutterFlowTheme
@@ -656,7 +652,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -674,14 +670,14 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           width: 220.0,
                                           height: 300.0,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -691,12 +687,12 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                             border: Border.all(
-                                              color: Color(0xFFE5E7EB),
+                                              color: const Color(0xFFE5E7EB),
                                               width: 1.0,
                                             ),
                                           ),
                                           child: Padding(
-                                            padding: EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.all(8.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               crossAxisAlignment:
@@ -720,11 +716,11 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, -1.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       8.0,
@@ -753,7 +749,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                         32.0,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0x9AFFFFFF),
                                                                       borderRadius:
                                                                           BorderRadius.circular(
@@ -761,19 +757,19 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                       border:
                                                                           Border
                                                                               .all(
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFFE5E7EB),
                                                                         width:
                                                                             2.0,
                                                                       ),
                                                                     ),
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           8.0,
@@ -788,7 +784,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Plus Jakarta Sans',
-                                                                              color: Color(0xFF15161E),
+                                                                              color: const Color(0xFF15161E),
                                                                               fontSize: 14.0,
                                                                               fontWeight: FontWeight.w500,
                                                                             ),
@@ -805,7 +801,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 8.0, 0.0, 0.0),
                                                   child: Text(
@@ -819,7 +815,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF15161E),
+                                                              const Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -841,7 +837,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.location_on,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -863,7 +859,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.person_rounded,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -879,7 +875,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -898,7 +894,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .getText(
                                                                 'l0x6flen' /* $250 */,
                                                               ),
-                                                              style: TextStyle(
+                                                              style: const TextStyle(
                                                                 color: Color(
                                                                     0xFF6F61EF),
                                                               ),
@@ -915,7 +911,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF606A85),
                                                                     fontSize:
                                                                         12.0,
@@ -931,7 +927,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -943,7 +939,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -963,7 +959,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                 'rmjbfgru' /* KAEC */,
                                                               ),
                                                               style:
-                                                                  TextStyle(),
+                                                                  const TextStyle(),
                                                             )
                                                           ],
                                                           style: FlutterFlowTheme
@@ -972,7 +968,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -990,14 +986,14 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           width: 220.0,
                                           height: 300.0,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -1007,12 +1003,12 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                             border: Border.all(
-                                              color: Color(0xFFE5E7EB),
+                                              color: const Color(0xFFE5E7EB),
                                               width: 1.0,
                                             ),
                                           ),
                                           child: Padding(
-                                            padding: EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.all(8.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               crossAxisAlignment:
@@ -1036,11 +1032,11 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, -1.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       8.0,
@@ -1069,7 +1065,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                         32.0,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0x9AFFFFFF),
                                                                       borderRadius:
                                                                           BorderRadius.circular(
@@ -1077,19 +1073,19 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                       border:
                                                                           Border
                                                                               .all(
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFFE5E7EB),
                                                                         width:
                                                                             2.0,
                                                                       ),
                                                                     ),
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           8.0,
@@ -1104,7 +1100,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Plus Jakarta Sans',
-                                                                              color: Color(0xFF15161E),
+                                                                              color: const Color(0xFF15161E),
                                                                               fontSize: 14.0,
                                                                               fontWeight: FontWeight.w500,
                                                                             ),
@@ -1121,7 +1117,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 8.0, 0.0, 0.0),
                                                   child: Text(
@@ -1135,7 +1131,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF15161E),
+                                                              const Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -1157,7 +1153,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.location_on,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -1179,7 +1175,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.person_rounded,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -1195,7 +1191,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -1214,7 +1210,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .getText(
                                                                 'gw0be4gd' /* $30 */,
                                                               ),
-                                                              style: TextStyle(
+                                                              style: const TextStyle(
                                                                 color: Color(
                                                                     0xFF6F61EF),
                                                               ),
@@ -1231,7 +1227,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF606A85),
                                                                     fontSize:
                                                                         12.0,
@@ -1247,7 +1243,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -1259,7 +1255,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -1279,7 +1275,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                 'jb8ijqyr' /* jeddah */,
                                                               ),
                                                               style:
-                                                                  TextStyle(),
+                                                                  const TextStyle(),
                                                             )
                                                           ],
                                                           style: FlutterFlowTheme
@@ -1288,7 +1284,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -1306,14 +1302,14 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           width: 220.0,
                                           height: 300.0,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -1323,12 +1319,12 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                             border: Border.all(
-                                              color: Color(0xFFE5E7EB),
+                                              color: const Color(0xFFE5E7EB),
                                               width: 1.0,
                                             ),
                                           ),
                                           child: Padding(
-                                            padding: EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.all(8.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               crossAxisAlignment:
@@ -1352,11 +1348,11 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, -1.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       8.0,
@@ -1385,7 +1381,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                         32.0,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0x9AFFFFFF),
                                                                       borderRadius:
                                                                           BorderRadius.circular(
@@ -1393,19 +1389,19 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                       border:
                                                                           Border
                                                                               .all(
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFFE5E7EB),
                                                                         width:
                                                                             2.0,
                                                                       ),
                                                                     ),
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           8.0,
@@ -1420,7 +1416,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Plus Jakarta Sans',
-                                                                              color: Color(0xFF15161E),
+                                                                              color: const Color(0xFF15161E),
                                                                               fontSize: 14.0,
                                                                               fontWeight: FontWeight.w500,
                                                                             ),
@@ -1437,7 +1433,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 8.0, 0.0, 0.0),
                                                   child: Text(
@@ -1451,7 +1447,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF15161E),
+                                                              const Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -1473,7 +1469,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.location_on,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -1495,7 +1491,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.person_rounded,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -1511,7 +1507,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -1530,7 +1526,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .getText(
                                                                 'd6xs41zy' /* $30 */,
                                                               ),
-                                                              style: TextStyle(
+                                                              style: const TextStyle(
                                                                 color: Color(
                                                                     0xFF6F61EF),
                                                               ),
@@ -1547,7 +1543,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF606A85),
                                                                     fontSize:
                                                                         12.0,
@@ -1563,7 +1559,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -1575,7 +1571,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -1595,7 +1591,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                 '5uu6zg9d' /* jeddah */,
                                                               ),
                                                               style:
-                                                                  TextStyle(),
+                                                                  const TextStyle(),
                                                             )
                                                           ],
                                                           style: FlutterFlowTheme
@@ -1604,7 +1600,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -1622,14 +1618,14 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           width: 220.0,
                                           height: 300.0,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -1639,12 +1635,12 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                             border: Border.all(
-                                              color: Color(0xFFE5E7EB),
+                                              color: const Color(0xFFE5E7EB),
                                               width: 1.0,
                                             ),
                                           ),
                                           child: Padding(
-                                            padding: EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.all(8.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               crossAxisAlignment:
@@ -1668,11 +1664,11 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, -1.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       8.0,
@@ -1701,7 +1697,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                         32.0,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0x9AFFFFFF),
                                                                       borderRadius:
                                                                           BorderRadius.circular(
@@ -1709,19 +1705,19 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                       border:
                                                                           Border
                                                                               .all(
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFFE5E7EB),
                                                                         width:
                                                                             2.0,
                                                                       ),
                                                                     ),
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           8.0,
@@ -1736,7 +1732,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Plus Jakarta Sans',
-                                                                              color: Color(0xFF15161E),
+                                                                              color: const Color(0xFF15161E),
                                                                               fontSize: 14.0,
                                                                               fontWeight: FontWeight.w500,
                                                                             ),
@@ -1753,7 +1749,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 8.0, 0.0, 0.0),
                                                   child: Text(
@@ -1767,7 +1763,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF15161E),
+                                                              const Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -1789,7 +1785,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.location_on,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -1811,7 +1807,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.person_rounded,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -1827,7 +1823,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -1846,7 +1842,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .getText(
                                                                 'trzioaqk' /* $30 */,
                                                               ),
-                                                              style: TextStyle(
+                                                              style: const TextStyle(
                                                                 color: Color(
                                                                     0xFF6F61EF),
                                                               ),
@@ -1863,7 +1859,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF606A85),
                                                                     fontSize:
                                                                         12.0,
@@ -1879,7 +1875,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -1891,7 +1887,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -1911,7 +1907,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                 'esgvqk6a' /* jeddah */,
                                                               ),
                                                               style:
-                                                                  TextStyle(),
+                                                                  const TextStyle(),
                                                             )
                                                           ],
                                                           style: FlutterFlowTheme
@@ -1920,7 +1916,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -1938,14 +1934,14 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           width: 220.0,
                                           height: 300.0,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -1955,12 +1951,12 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                             border: Border.all(
-                                              color: Color(0xFFE5E7EB),
+                                              color: const Color(0xFFE5E7EB),
                                               width: 1.0,
                                             ),
                                           ),
                                           child: Padding(
-                                            padding: EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.all(8.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               crossAxisAlignment:
@@ -1984,11 +1980,11 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, -1.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       8.0,
@@ -2017,7 +2013,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                         32.0,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0x9AFFFFFF),
                                                                       borderRadius:
                                                                           BorderRadius.circular(
@@ -2025,19 +2021,19 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                       border:
                                                                           Border
                                                                               .all(
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFFE5E7EB),
                                                                         width:
                                                                             2.0,
                                                                       ),
                                                                     ),
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           8.0,
@@ -2052,7 +2048,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Plus Jakarta Sans',
-                                                                              color: Color(0xFF15161E),
+                                                                              color: const Color(0xFF15161E),
                                                                               fontSize: 14.0,
                                                                               fontWeight: FontWeight.w500,
                                                                             ),
@@ -2069,7 +2065,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 8.0, 0.0, 0.0),
                                                   child: Text(
@@ -2083,7 +2079,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF15161E),
+                                                              const Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -2105,7 +2101,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.location_on,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -2127,7 +2123,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   context)
                                                               .bodyMedium,
                                                     ),
-                                                    Icon(
+                                                    const Icon(
                                                       Icons.person_rounded,
                                                       color: Color(0xFF2F3171),
                                                       size: 24.0,
@@ -2143,7 +2139,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -2162,7 +2158,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .getText(
                                                                 'vbja1xb6' /* $30 */,
                                                               ),
-                                                              style: TextStyle(
+                                                              style: const TextStyle(
                                                                 color: Color(
                                                                     0xFF6F61EF),
                                                               ),
@@ -2179,7 +2175,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF606A85),
                                                                     fontSize:
                                                                         12.0,
@@ -2195,7 +2191,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -2207,7 +2203,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -2227,7 +2223,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                                 'ofbulnhv' /* jeddah */,
                                                               ),
                                                               style:
-                                                                  TextStyle(),
+                                                                  const TextStyle(),
                                                             )
                                                           ],
                                                           style: FlutterFlowTheme
@@ -2236,7 +2232,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF606A85),
                                                                 fontSize: 14.0,
                                                                 fontWeight:
@@ -2253,7 +2249,7 @@ class _ActivetiesWidgetState extends State<ActivetiesWidget> {
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 12.0)),
+                                    ].divide(const SizedBox(height: 12.0)),
                                   ),
                                 ),
                               ],

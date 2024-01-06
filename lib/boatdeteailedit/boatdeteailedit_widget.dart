@@ -6,13 +6,11 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'boatdeteailedit_model.dart';
 export 'boatdeteailedit_model.dart';
 
 class BoatdeteaileditWidget extends StatefulWidget {
-  const BoatdeteaileditWidget({Key? key}) : super(key: key);
+  const BoatdeteaileditWidget({super.key});
 
   @override
   _BoatdeteaileditWidgetState createState() => _BoatdeteaileditWidgetState();
@@ -109,7 +107,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                     fontSize: 22.0,
                   ),
             ),
-            actions: [],
+            actions: const [],
             centerTitle: true,
             elevation: 2.0,
           ),
@@ -132,7 +130,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -141,7 +139,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   30.0, 0.0, 0.0, 20.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
@@ -161,7 +159,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                         Expanded(
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     77.0, 0.0, 0.0, 0.0),
                                             child: SwitchListTile.adaptive(
                                               value: _model
@@ -169,7 +167,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                               onChanged: (newValue) async {
                                                 setState(() =>
                                                     _model.switchListTileValue =
-                                                        newValue!);
+                                                        newValue);
                                               },
                                               title: Text(
                                                 FFLocalizations.of(context)
@@ -187,7 +185,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                               tileColor:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
-                                              activeColor: Color(0xFF0DAF0D),
+                                              activeColor: const Color(0xFF0DAF0D),
                                               activeTrackColor:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryBtnText,
@@ -202,9 +200,9 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
@@ -212,7 +210,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                         focusNode:
                                             _model.emailAddressFocusNode1,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.name],
+                                        autofillHints: const [AutofillHints.name],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: FFLocalizations.of(context)
@@ -225,12 +223,12 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFF1F4F8),
                                               width: 2.0,
                                             ),
@@ -238,7 +236,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFF4B39EF),
                                               width: 2.0,
                                             ),
@@ -246,7 +244,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -255,7 +253,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -263,7 +261,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF1F4F8),
+                                          fillColor: const Color(0xFFF1F4F8),
                                           prefixIcon: Icon(
                                             Icons.directions_boat,
                                             color: FlutterFlowTheme.of(context)
@@ -274,7 +272,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF101213),
+                                              color: const Color(0xFF101213),
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w500,
                                             ),
@@ -285,9 +283,9 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
@@ -295,7 +293,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                         focusNode:
                                             _model.emailAddressFocusNode2,
                                         autofocus: true,
-                                        autofillHints: [
+                                        autofillHints: const [
                                           AutofillHints.telephoneNumber
                                         ],
                                         obscureText: false,
@@ -310,12 +308,12 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFF1F4F8),
                                               width: 2.0,
                                             ),
@@ -323,7 +321,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFF4B39EF),
                                               width: 2.0,
                                             ),
@@ -331,7 +329,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -340,7 +338,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -348,7 +346,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF1F4F8),
+                                          fillColor: const Color(0xFFF1F4F8),
                                           prefixIcon: Icon(
                                             FFIcons.klicense,
                                             color: FlutterFlowTheme.of(context)
@@ -359,7 +357,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF101213),
+                                              color: const Color(0xFF101213),
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w500,
                                             ),
@@ -375,9 +373,9 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   30.0, 0.0, 5.0, 16.0),
-                                          child: Container(
+                                          child: SizedBox(
                                             width: 150.0,
                                             child: TextFormField(
                                               controller: _model
@@ -385,7 +383,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                               focusNode:
                                                   _model.emailAddressFocusNode3,
                                               autofocus: true,
-                                              autofillHints: [
+                                              autofillHints: const [
                                                 AutofillHints.countryName
                                               ],
                                               obscureText: false,
@@ -402,14 +400,14 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              Color(0xFF57636C),
+                                                              const Color(0xFF57636C),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.w500,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFF1F4F8),
                                                     width: 2.0,
                                                   ),
@@ -419,7 +417,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 ),
                                                 focusedBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFF4B39EF),
                                                     width: 2.0,
                                                   ),
@@ -428,7 +426,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           12.0),
                                                 ),
                                                 errorBorder: OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFFF5963),
                                                     width: 2.0,
                                                   ),
@@ -438,7 +436,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 ),
                                                 focusedErrorBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFFF5963),
                                                     width: 2.0,
                                                   ),
@@ -447,7 +445,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           12.0),
                                                 ),
                                                 filled: true,
-                                                fillColor: Color(0xFFF1F4F8),
+                                                fillColor: const Color(0xFFF1F4F8),
                                                 prefixIcon: Icon(
                                                   Icons.groups_sharp,
                                                   color: FlutterFlowTheme.of(
@@ -461,7 +459,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF101213),
+                                                    color: const Color(0xFF101213),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
@@ -475,9 +473,9 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   5.0, 0.0, 30.0, 16.0),
-                                          child: Container(
+                                          child: SizedBox(
                                             width: 150.0,
                                             child: TextFormField(
                                               controller: _model
@@ -485,7 +483,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                               focusNode:
                                                   _model.emailAddressFocusNode4,
                                               autofocus: true,
-                                              autofillHints: [
+                                              autofillHints: const [
                                                 AutofillHints.countryName
                                               ],
                                               obscureText: false,
@@ -502,14 +500,14 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              Color(0xFF57636C),
+                                                              const Color(0xFF57636C),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.w500,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFF1F4F8),
                                                     width: 2.0,
                                                   ),
@@ -519,7 +517,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 ),
                                                 focusedBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFF4B39EF),
                                                     width: 2.0,
                                                   ),
@@ -528,7 +526,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           12.0),
                                                 ),
                                                 errorBorder: OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFFF5963),
                                                     width: 2.0,
                                                   ),
@@ -538,7 +536,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 ),
                                                 focusedErrorBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFFF5963),
                                                     width: 2.0,
                                                   ),
@@ -547,7 +545,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           12.0),
                                                 ),
                                                 filled: true,
-                                                fillColor: Color(0xFFF1F4F8),
+                                                fillColor: const Color(0xFFF1F4F8),
                                                 prefixIcon: Icon(
                                                   Icons.location_pin,
                                                   color: FlutterFlowTheme.of(
@@ -561,7 +559,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF101213),
+                                                    color: const Color(0xFF101213),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
@@ -575,9 +573,9 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                     ],
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
@@ -585,7 +583,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                         focusNode:
                                             _model.emailAddressFocusNode5,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.email],
+                                        autofillHints: const [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: FFLocalizations.of(context)
@@ -598,12 +596,12 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFF1F4F8),
                                               width: 2.0,
                                             ),
@@ -611,7 +609,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFF4B39EF),
                                               width: 2.0,
                                             ),
@@ -619,7 +617,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -628,7 +626,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -636,7 +634,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF1F4F8),
+                                          fillColor: const Color(0xFFF1F4F8),
                                           prefixIcon: Icon(
                                             Icons.directions_boat,
                                             color: FlutterFlowTheme.of(context)
@@ -647,7 +645,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF101213),
+                                              color: const Color(0xFF101213),
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w500,
                                             ),
@@ -658,9 +656,9 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
@@ -668,7 +666,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                         focusNode:
                                             _model.emailAddressFocusNode6,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.email],
+                                        autofillHints: const [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: FFLocalizations.of(context)
@@ -681,12 +679,12 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFF1F4F8),
                                               width: 2.0,
                                             ),
@@ -694,7 +692,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFF4B39EF),
                                               width: 2.0,
                                             ),
@@ -702,7 +700,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -711,7 +709,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFFF5963),
                                               width: 2.0,
                                             ),
@@ -719,7 +717,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF1F4F8),
+                                          fillColor: const Color(0xFFF1F4F8),
                                           prefixIcon: Icon(
                                             Icons.dehaze,
                                             color: FlutterFlowTheme.of(context)
@@ -730,7 +728,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              color: Color(0xFF101213),
+                                              color: const Color(0xFF101213),
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w500,
                                             ),
@@ -741,7 +739,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 0.0, 5.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -770,9 +768,9 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   30.0, 0.0, 5.0, 16.0),
-                                          child: Container(
+                                          child: SizedBox(
                                             width: 150.0,
                                             child: TextFormField(
                                               controller: _model
@@ -780,7 +778,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                               focusNode:
                                                   _model.emailAddressFocusNode7,
                                               autofocus: true,
-                                              autofillHints: [
+                                              autofillHints: const [
                                                 AutofillHints.countryName
                                               ],
                                               obscureText: false,
@@ -797,14 +795,14 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              Color(0xFF57636C),
+                                                              const Color(0xFF57636C),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.w500,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFF1F4F8),
                                                     width: 2.0,
                                                   ),
@@ -814,7 +812,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 ),
                                                 focusedBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFF4B39EF),
                                                     width: 2.0,
                                                   ),
@@ -823,7 +821,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           12.0),
                                                 ),
                                                 errorBorder: OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFFF5963),
                                                     width: 2.0,
                                                   ),
@@ -833,7 +831,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 ),
                                                 focusedErrorBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFFF5963),
                                                     width: 2.0,
                                                   ),
@@ -842,7 +840,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           12.0),
                                                 ),
                                                 filled: true,
-                                                fillColor: Color(0xFFF1F4F8),
+                                                fillColor: const Color(0xFFF1F4F8),
                                               ),
                                               style: FlutterFlowTheme.of(
                                                       context)
@@ -850,7 +848,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF101213),
+                                                    color: const Color(0xFF101213),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
@@ -862,7 +860,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 10.0),
                                         child: Icon(
                                           Icons.route_rounded,
@@ -874,9 +872,9 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   5.0, 0.0, 30.0, 16.0),
-                                          child: Container(
+                                          child: SizedBox(
                                             width: 150.0,
                                             child: TextFormField(
                                               controller: _model
@@ -884,7 +882,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                               focusNode:
                                                   _model.emailAddressFocusNode8,
                                               autofocus: true,
-                                              autofillHints: [
+                                              autofillHints: const [
                                                 AutofillHints.countryName
                                               ],
                                               obscureText: false,
@@ -901,14 +899,14 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              Color(0xFF57636C),
+                                                              const Color(0xFF57636C),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.w500,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFF1F4F8),
                                                     width: 2.0,
                                                   ),
@@ -918,7 +916,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 ),
                                                 focusedBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFF4B39EF),
                                                     width: 2.0,
                                                   ),
@@ -927,7 +925,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           12.0),
                                                 ),
                                                 errorBorder: OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFFF5963),
                                                     width: 2.0,
                                                   ),
@@ -937,7 +935,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 ),
                                                 focusedErrorBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFFF5963),
                                                     width: 2.0,
                                                   ),
@@ -946,7 +944,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           12.0),
                                                 ),
                                                 filled: true,
-                                                fillColor: Color(0xFFF1F4F8),
+                                                fillColor: const Color(0xFFF1F4F8),
                                               ),
                                               style: FlutterFlowTheme.of(
                                                       context)
@@ -954,7 +952,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF101213),
+                                                    color: const Color(0xFF101213),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
@@ -968,7 +966,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                     ],
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 0.0, 5.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -992,14 +990,14 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         20.0, 0.0, 10.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   10.0, 15.0, 20.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1061,7 +1059,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1138,7 +1136,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1214,7 +1212,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1240,7 +1238,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   10.0, 15.0, 20.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1302,7 +1300,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1378,7 +1376,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1454,7 +1452,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1480,7 +1478,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   10.0, 15.0, 20.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1542,7 +1540,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1618,7 +1616,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1694,7 +1692,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1720,7 +1718,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   10.0, 15.0, 20.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1783,7 +1781,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1859,7 +1857,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1935,7 +1933,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                               .secondaryText,
                                                         ),
                                                     iconColor:
-                                                        Color(0xFF6E189D),
+                                                        const Color(0xFF6E189D),
                                                     iconSize: 18.0,
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1961,9 +1959,9 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 20.0, 20.0, 16.0),
-                                          child: Container(
+                                          child: SizedBox(
                                             width: 370.0,
                                             child: TextFormField(
                                               controller: _model
@@ -1971,7 +1969,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                               focusNode:
                                                   _model.emailAddressFocusNode9,
                                               autofocus: true,
-                                              autofillHints: [
+                                              autofillHints: const [
                                                 AutofillHints.email
                                               ],
                                               obscureText: false,
@@ -1988,14 +1986,14 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              Color(0xFF57636C),
+                                                              const Color(0xFF57636C),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.w500,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFF1F4F8),
                                                     width: 2.0,
                                                   ),
@@ -2005,7 +2003,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 ),
                                                 focusedBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFF4B39EF),
                                                     width: 2.0,
                                                   ),
@@ -2014,7 +2012,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           12.0),
                                                 ),
                                                 errorBorder: OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFFF5963),
                                                     width: 2.0,
                                                   ),
@@ -2024,7 +2022,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                 ),
                                                 focusedErrorBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0xFFFF5963),
                                                     width: 2.0,
                                                   ),
@@ -2033,7 +2031,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           12.0),
                                                 ),
                                                 filled: true,
-                                                fillColor: Color(0xFFF1F4F8),
+                                                fillColor: const Color(0xFFF1F4F8),
                                                 prefixIcon: Icon(
                                                   Icons.dehaze,
                                                   color: FlutterFlowTheme.of(
@@ -2047,7 +2045,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: Color(0xFF101213),
+                                                    color: const Color(0xFF101213),
                                                     fontSize: 14.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
@@ -2059,10 +2057,10 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.05),
+                                              const AlignmentDirectional(0.0, 0.05),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 50.0, 0.0, 50.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {},
@@ -2073,14 +2071,14 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                               options: FFButtonOptions(
                                                 width: 270.0,
                                                 height: 50.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
-                                                color: Color(0xFF6E189D),
+                                                color: const Color(0xFF6E189D),
                                                 textStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleMedium
@@ -2089,7 +2087,7 @@ class _BoatdeteaileditWidgetState extends State<BoatdeteaileditWidget> {
                                                           color: Colors.white,
                                                         ),
                                                 elevation: 2.0,
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Colors.transparent,
                                                   width: 1.0,
                                                 ),

@@ -9,7 +9,7 @@ class TodosTable extends SupabaseTable<TodosRow> {
 }
 
 class TodosRow extends SupabaseDataRow {
-  TodosRow(Map<String, dynamic> data) : super(data);
+  TodosRow(super.data);
 
   @override
   SupabaseTable get table => TodosTable();
